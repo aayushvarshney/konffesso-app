@@ -1,0 +1,64 @@
+
+body {
+  background-color: #051624;
+}
+
+.centered {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  margin: 1px;
+}
+
+.mini{
+  margin-top: 1rem;
+}
+
+.form-control{
+  border: none;
+  height: 18rem;
+  width: 150rem;
+  font-size: 2rem;
+  background: transparent;
+}
+
+
+.form-control:focus{
+ 
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  width: 75rem;
+  color: white;
+  background: transparent;
+  /* border: 2px solid black; */
+}
+
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+}
+
+body {
+  background: #eff0eb;
+  background-image: url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg');
+  background-size: cover;
+}
+

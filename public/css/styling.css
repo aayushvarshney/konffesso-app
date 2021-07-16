@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.masthead {
+  font-family: 'Krona One', sans-serif;
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.masthead .h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1, .masthead .h1 {
+    font-size: 3.5rem;
+  }
+}

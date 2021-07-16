@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secrets App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="container-fluid centered">
+    <i class="fas fa-key fa-3x text-white"></i>
+    <h1 class="display-3 text-white">Secrets</h1>
+    <h1 class="secret-text text-white mt-2">Don't keep your secrets, share them anonymously!</h1>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group d-flex pt-3">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret? Type in here.." autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-dark btn-lg mb-4">Submit</button>
+      <a class="btn btn-dark btn-lg mb-4" href="/secrets" role="button">Go Back</a>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>
