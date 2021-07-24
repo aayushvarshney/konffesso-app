@@ -1,15 +1,19 @@
-<%- include('partials/header') %>
+<%- include('partials/headerhome') %>
 
-
-  <header class="masthead d-flex align-items-center" style="background-image: url('bgp1.png'); background-size:cover;  background-repeat: no-repeat;">
-      <div class="container px-4 px-lg-5 text-center">
-          <h1 class="mb-1 text-white">Have a secret to share?</h1><br><br>
+ <div id="particles-js"></div> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+     
+    <header class="masthead d-flex align-items-center">
+     <div class="container px-4 px-lg-5 text-center">
+          <h1 class="mb-1 text">Have a secret to share?</h1><br><br>
           <h1 class="mb-1 text-danger">Feeling anxious?</h1><br><br>
-          <h2 class="mb-1 text-warning">Write and browse anonymously!</h2><br><br><br><br><br>
-          <h3 class="mb-5 text-success">Join Konffess now!</h3>
+          <h2 class="mb-1 text">Write and browse anonymously!</h2><br><br><br><br><br>
+          <h3 class="mb-5 text">Join Konffesso now!</h3>
           <a class="btn btn-light btn-lg" href="/register" role="button">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a class="btn btn-dark btn-lg ms-4" href="/login" role="button">Login  </a>
       </div>
   </header>
-
+  <script>
+  
+  particlesJS("particles-js", {"particles":{"number":{"value":183,"density":{"enable":true,"value_area":1523.2414578222467}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":4,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1.763753266952075},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+  </script>
 <%- include('partials/footer') %>

@@ -1,6 +1,6 @@
 
 body {
-  background-color: #051624;
+  background-color: #2c2e43;
 }
 
 .centered {
@@ -29,13 +29,11 @@ body {
 
 
 .form-control:focus{
- 
   outline: 0 !important;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
   width: 75rem;
   color: white;
   background: transparent;
-  /* border: 2px solid black; */
 }
 
 
@@ -56,9 +54,20 @@ body {
   left: 50px;
 }
 
-body {
-  background: #eff0eb;
-  background-image: url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg');
-  background-size: cover;
+body{
+  margin:0;
 }
-
+canvas{
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js{
+  position:absolute;
+  width: 100%;
+  height: auto;
+  background-color: #2c2e43;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-position: 50% 50%;
+}
